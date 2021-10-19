@@ -85,7 +85,7 @@ class Enigma extends React.Component<ReactCookieProps, EnigmaState> {
             rotor2: Rotor,
             rotor3: Rotor,
         } = this.setupRotors();
-        let dm = props.cookies?.get("darkMode") || "FALSE";
+        let dm = (props.cookies?.get("darkMode") || "FALSE") === "TRUE";
         let plugs: Plug[] = [];
 
         let plugsStr = props.cookies?.get("plugs", {doNotParse: true});
@@ -103,7 +103,7 @@ class Enigma extends React.Component<ReactCookieProps, EnigmaState> {
             pressedKey: null,
             litKey: null,
             ...rotors,
-            darkMode: dm.toString().toUpperCase() === "TRUE",
+            darkMode: dm,
             plugs: plugs,
             cipherText: "",
         };
