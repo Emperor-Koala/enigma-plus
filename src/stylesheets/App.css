@@ -1,0 +1,143 @@
+* {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+body.dark {
+  background-color: #444;
+}
+
+.ek-container {
+  padding-bottom: 10px;
+}
+
+.ek-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+}
+
+.ek-row > hr {
+  width: 60%;
+}
+
+.ek-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.keyboard-char {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #bbb;
+  border-color: black;
+  border-style: solid;
+  border-width: thin;
+  width: 60px;
+  height: 60px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.keyboard-char.dark {
+  background-color: #333;
+  color: #eee;
+}
+
+.keyboard-char > p {
+  font-size: 24pt;
+  margin: 0;
+}
+
+.keyboard-char.pressed {
+  background-color: #FFE98E;
+}
+
+.keyboard-char.dark.pressed {
+  background-color: #BA9B31;
+}
+
+.dark-mode-text {
+  color: #eee;
+}
+
+button {
+  box-sizing: border-box;
+  border: #bbb solid thin;
+  border-radius: 2px;
+  background: linear-gradient(to bottom, #fffb, #b6b6b6);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:active {
+  background: linear-gradient(to bottom, #dddb, #949494);
+}
+
+button.dark {
+  background: linear-gradient(to bottom, #888, #666);
+  color: #eee;
+  border: none;
+}
+
+button.dark:active {
+  background: linear-gradient(to bottom, #777, #555);
+}
+
+.flipped {
+  transform: rotate(180deg);
+}
+
+button.flipped {
+  background: linear-gradient(to top, #fffb, #b6b6b6);
+}
+
+button.flipped:active {
+  background: linear-gradient(to top, #dddb, #949494);
+}
+
+button.flipped.dark {
+  background: linear-gradient(to top, #888, #666);
+}
+
+button.flipped.dark:active {
+  background: linear-gradient(to top, #777, #555);
+}
+
+.rotor-number {
+  height: 30px;
+  width: 30px;
+  margin-bottom: 10px;
+}
+
+.rotor-position {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: #111 solid thin;
+  background-color: #eee;
+  font-size: 18pt;
+}
+
+.rotor-position.dark {
+  background-color: #333;
+  color: #eee;
+}
+
+.plugboard-char:hover {
+  cursor: pointer;
+}
