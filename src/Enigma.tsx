@@ -561,6 +561,7 @@ class Enigma extends React.Component<ReactCookieProps, EnigmaState> {
                             width: "300px",
                             borderRadius: "2px",
                             border: "none",
+                            boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2)",
                             marginRight: "10px",
                         }}
                         value={this.state.cipherText}
